@@ -27,6 +27,11 @@ nav {
 	font-size: 35px;
 	text-decoration: none;
 }
+#page-logo:hover {
+	cursor: pointer;
+	color: #36f4de;
+	transition: 1s;
+}
 .nav-links {
 	text-align: right;
 }
