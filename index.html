@@ -4,18 +4,37 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="./style.css" />
 		<title>Asambe Car Rentals</title>
 	</head>
 	<body>
 		<header class="navMenu">
 			<nav>
-				<a href="./index.html">Asambe Car Rentals</a>
+				<a href="./index.html" id="page-logo">Asambe Car Rentals</a>
 				<div class="nav-links" id="navLinks">
 					<ul>
-						<li><a href="#">Sign Up</a></li>
-						<li><a href="#">Login</a></li>
+						<li class="hero-btn"><a href="#">Sign Up</a></li>
+						<li class="hero-btn"><a href="#">Login</a></li>
 					</ul>
+				</div>
+			</nav>
+			<nav class="car-search">
+				<h1>Any Car, Anywhere, Anytime</h1>
+				<div class="search">
+					<input
+						type="text"
+						name="search"
+						id="search"
+						placeholder="E.g Volkswagen"
+						class="search-term"
+					/>
+					<button type="submit" class="search-btn">
+						<i class="fa fa-search"></i>
+					</button>
 				</div>
 			</nav>
 		</header>

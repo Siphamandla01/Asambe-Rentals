@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -19,4 +20,83 @@ nav {
 	padding: 2% 6%;
 	justify-content: space-between;
 	align-items: center;
+}
+#page-logo {
+	font-family: "Monoton", sans-serif;
+	color: #36f4deb2;
+	font-size: 35px;
+	text-decoration: none;
+}
+.nav-links {
+	text-align: right;
+}
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.hero-btn {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 13px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover {
+	border: 1px solid #36f4de;
+	background: #36f4deb0;
+	transition: 1s;
+}
+/* Car search border */
+.car-search {
+	margin: 150px auto;
+	width: 50%;
+	background-color: rgba(153, 153, 153, 0.458);
+	border-radius: 10px;
+	text-align: center;
+	padding: 80px 180px;
+	position: relative;
+	display: block;
+}
+.car-search h1 {
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.856);
+	padding-bottom: 15px;
+}
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+.search-term {
+	width: 100%;
+	border: 3px solid #36f4de;
+	border-right: none;
+	padding: 15px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	/* color: #9dbfaf; */
+	background-color: rgba(255, 255, 255, 0.867);
+}
+.search-term:focus {
+	color: #00b4cc;
+}
+.search-btn {
+	width: 40px;
+	height: 36px;
+	border: 1px solid #36f4de;
+	background: #36f4de;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
 }
