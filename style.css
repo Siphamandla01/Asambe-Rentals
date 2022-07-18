@@ -27,6 +27,11 @@ nav {
 	font-size: 35px;
 	text-decoration: none;
 }
+#page-logo:hover {
+	cursor: pointer;
+	color: #36f4de;
+	transition: 1s;
+}
 .nav-links {
 	text-align: right;
 }
@@ -55,11 +60,12 @@ nav {
 	background: #36f4deb0;
 	transition: 1s;
 }
+
 /* Car search border */
 .car-search {
 	margin: 150px auto;
-	width: 50%;
-	background-color: rgba(153, 153, 153, 0.458);
+	width: 70%;
+	/* background-color: rgba(153, 153, 153, 0.049); */
 	border-radius: 10px;
 	text-align: center;
 	padding: 80px 180px;
@@ -67,14 +73,16 @@ nav {
 	display: block;
 }
 .car-search h1 {
+	font-size: 35px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.856);
 	padding-bottom: 15px;
 }
 .search {
-	width: 100%;
+	width: 70%;
 	position: relative;
 	display: flex;
+	margin: 0 auto;
 }
 .search-term {
 	width: 100%;
@@ -99,4 +107,44 @@ nav {
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 	font-size: 20px;
+}
+
+/* Image Cards */
+.card-content {
+	text-align: center;
+	margin: 20px;
+}
+.card-content h1 {
+	text-transform: capitalize;
+	color: #999;
+	font-size: 30px;
+}
+.images {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.image-container {
+	height: 250px;
+	width: 400px;
+	position: relative;
+}
+.image-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.fade::after {
+	content: "";
+	background-color: black;
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.fade:hover::after {
+	opacity: 0.4;
 }
